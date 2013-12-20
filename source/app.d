@@ -27,6 +27,22 @@ unittest {
    assert("bool_yes" in properties);
    assert("bool_no" in properties);
 
+   assert(properties["first"] = "This is the first line.");
+   assert(properties["second"] = "This is the second line.");
+   assert(properties["third"] = "The third line that will have a value.");
+   assert(properties["integer_0"] = "0");
+   assert(properties["integer_1"] = "1");
+   assert(properties["integer_123"] = "123");
+   assert(properties["float_3.14"] = "3.14");
+   assert(properties["bool_true"] = "true");
+   assert(properties["bool_false"] = "false");
+   assert(properties["bool_1"] = "1");
+   assert(properties["bool_0"] = "0");
+   assert(properties["bool_on"] = "On");
+   assert(properties["bool_off"] = "Off");
+   assert(properties["bool_yes"] = "Yes");
+   assert(properties["bool_no"] = "No");
+
    assert(text(typeid(properties.as!(byte)("integer_123"))) == "byte");
    assert(text(typeid(properties.as!(ubyte)("integer_123"))) == "ubyte");
    assert(text(typeid(properties.as!(short)("integer_123"))) == "short");
