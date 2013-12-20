@@ -1,0 +1,11 @@
+{
+	"name": "proper-d",
+	"description": "A simple library for reading simple property files.",
+	"homepage": "http://example.org",
+	"copyright": "Copyright © 2013, Peter Wood.",
+	"authors": [
+		"Peter Wood"
+	],
+	"dependencies": {
+	}
+}
