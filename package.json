@@ -1,11 +1,10 @@
 {
-	"name": "proper-d",
-	"description": "A simple library for reading simple property files.",
-	"homepage": "http://example.org",
-	"copyright": "Copyright © 2013, Peter Wood.",
-	"authors": [
-		"Peter Wood"
-	],
-	"dependencies": {
-	}
+   "name": "proper-d",
+   "description": "A simple library for reading simple property files.",
+   "homepage": "https://github.com/free-beer/proper-d",
+   "license": "MIT",
+   "copyright": "Copyright © 2013, Peter Wood.",
+   "authors": ["Peter Wood"],
+   "dependencies": {
+   }
 }
