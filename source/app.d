@@ -8,7 +8,7 @@ void main() {
 unittest {
    import std.conv, std.exception;
 
-   auto properties = readProperties("./test.properties");
+   auto properties = readProperties(new File("./test.properties", "r"));
 
    assert(properties.length == 15);
    assert("first" in properties);
@@ -117,6 +117,7 @@ unittest {
    assert(properties.as!(bool)("non_existent", true) == true);
 
    assertThrown!(PropertyException)(readProperties("./does_not_exist.txt"));
+   assertThrown!(PropertyException)(readProperties("./broken.cfg"));
    assertThrown!(PropertyException)(properties.as!(uint)("first"));
 
    writeln("*** UNIT TESTS COMPLETED SUCCESSFULLY.");

@@ -39,7 +39,7 @@ string[string] readProperties(string path) {
  * Params:
  *    path =  A string containing the path and name of the file to be read.
  */
-string[string] readProperties(File file) {
+string[string] readProperties(File* file) {
    return(readProperties(file.name));
 }
 
